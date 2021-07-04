@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "r3DR0fiiITU25Thi7nmV4wglmvdgW0Mi53THItxaPxRwk1L5j5F9mSv1BoV5iKi6e8Ct7xL4hgAxZv/PYzwA+A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tmviz\\source\\repos\\MovieAPI\\MovieAPI\\MovieAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tmviz\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
