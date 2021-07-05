@@ -38,3 +38,4 @@ C:\Users\tmviz\source\repos\MovieAPI\MovieAPI\obj\Debug\netcoreapp3.1\MovieAPI.c
 C:\Users\tmviz\source\repos\MovieAPI\MovieAPI\obj\Debug\netcoreapp3.1\MovieAPI.dll
 C:\Users\tmviz\source\repos\MovieAPI\MovieAPI\obj\Debug\netcoreapp3.1\MovieAPI.pdb
 C:\Users\tmviz\source\repos\MovieAPI\MovieAPI\obj\Debug\netcoreapp3.1\MovieAPI.genruntimeconfig.cache
+C:\Users\tmviz\source\repos\MovieAPI\MovieAPI\obj\Debug\netcoreapp3.1\Razor\Views\Home\SearchbyKeyword.cshtml.g.cs

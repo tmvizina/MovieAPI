@@ -8,11 +8,11 @@ using Newtonsoft.Json;
 
 namespace MovieAPI.Models
 {
-    public class MovieDAL
+    public class SearchbyKeywordDAL
     {
         public string CallAPI(string searchType, string title)
         {
-            
+
             string key = "2133fdb8";
             string url = @$"http://www.omdbapi.com/?{searchType}={title}&apikey={key}";
             //This allows us to do either kind of search by choosing via the front end of the program.
@@ -28,14 +28,12 @@ namespace MovieAPI.Models
             return json;
 
         }
-    
-    public Movie GetMovie(string title)
+
+        public SearchResults GetSearchResults(string title)
         {
-            string json =CallAPI("t", title);
-            Movie m =JsonConvert.DeserializeObject<Movie>(json);
+            string json = CallAPI("s", title);
+            SearchResults m = JsonConvert.DeserializeObject<SearchResults>(json);
             return m;
         }
-
-
     }
 }

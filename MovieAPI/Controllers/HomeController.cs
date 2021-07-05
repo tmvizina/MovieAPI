@@ -15,6 +15,7 @@ namespace MovieAPI.Controllers
     public class HomeController : Controller
     {
         MovieDAL movieDAL = new MovieDAL();
+        SearchbyKeywordDAL searchbyKeywordDAL = new SearchbyKeywordDAL();
 
         public IActionResult Index()
         {
@@ -28,6 +29,7 @@ namespace MovieAPI.Controllers
         {
             return View();
         }
+
 
        [ HttpPost ]
         public IActionResult MovieSearch(string title)
@@ -44,6 +46,21 @@ namespace MovieAPI.Controllers
         }
 
 
+        public IActionResult SearchbyKeyword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult SearchbyKeyword(string keyword)
+        {
+            SearchResults results = searchbyKeywordDAL.GetSearchResults(keyword);
+            return View(results);
+        }
+
+
+
+
         public IActionResult MovieNight()
         {
             return View();
@@ -56,9 +73,9 @@ namespace MovieAPI.Controllers
             List<Movie> movienight = new List<Movie>();
             // string json =movieDAL.CallAPI(searchtype, title);
 
-            Movie movie1 = movieDAL.GetMovieList(title1);
-            Movie movie2 = movieDAL.GetMovieList(title2);
-            Movie movie3 = movieDAL.GetMovieList(title3);
+            Movie movie1 = movieDAL.GetMovie(title1);
+            Movie movie2 = movieDAL.GetMovie(title2);
+            Movie movie3 = movieDAL.GetMovie(title3);
 
             movienight.Add(movie1);
             movienight.Add(movie2);

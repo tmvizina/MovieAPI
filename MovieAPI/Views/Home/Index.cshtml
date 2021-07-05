@@ -8,7 +8,19 @@
 </div>
 
 
-<h3>Movie Search</h3>
+<h3>Search Database by keyword</h3>
+<form asp-action="SearchbyKeyword">
+    <p>Keyword</p>
+
+    <input name="keyword" type="text" required />
+    <br />
+
+    <input type="submit" />
+</form>
+
+
+
+<h3>Movie Search by Title</h3>
 <form asp-action="MovieSearch">
     <p>title</p>
     <input name="title" type="text" required />

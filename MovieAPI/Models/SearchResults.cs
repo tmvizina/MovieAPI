@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 
 namespace MovieAPI.Models
 {
-
     public class SearchResults
     {
         public Search[] Search { get; set; }
@@ -21,5 +20,4 @@ namespace MovieAPI.Models
         public string Type { get; set; }
         public string Poster { get; set; }
     }
-
 }
